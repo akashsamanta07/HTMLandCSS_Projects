@@ -16,7 +16,9 @@ body {
   box-shadow: 5px 5px 15px rgba(20, 17, 17, 0.3);
   border-radius: 10px;
 }
-
+h1{
+  text-align: center;
+}
 .title_small {
   font-size: 20px;
 }
