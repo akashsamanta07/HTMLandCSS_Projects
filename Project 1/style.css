@@ -18,6 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 .top_section h1 {
   font-size: 3rem;
