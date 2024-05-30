@@ -4,20 +4,12 @@
   margin:0;
   box-sizing: border-box;
 }
-body {
-  height: 100%;
-  margin: 0;
-  font-size: 16px;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.8em;
-  color: #666;
-  /* color:blue; */
+body{
+  color: #fff;
 }
 .pimg1 {
   background-image: url("images/image1.png");
   min-height: 100vh;
-  /* opacity: 0.7; */
 }
 
 .pimg2 {
@@ -32,7 +24,6 @@ body {
 .pimg1,
 .pimg2,
 .pimg3 {
-  position: relative;
   background-position:center;
   background-size:cover;
   background-repeat: no-repeat;
@@ -41,42 +32,51 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.ptext {
-  /* position: absolute;
-  top: 50%;
-  left:50%;
-  transform:translate(-50%,-50%); */
-  color: black;
+.textBg {
+  background:rgb(18, 19, 18);
   letter-spacing: 8px;
   text-transform: uppercase;
-}
-
-.textBg {
-  background:rgb(50, 70, 50);
-  color: #fff;
   padding: 20px;
-  /* position:relative; */
 }
-
-.section {
+.section{
   padding: 50px 80px;
   text-align: justify;
 }
 .section h2{
   text-align:center;
-  padding-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 .section-light {
   background-color: #f4f4f4;
-  color: #666;
+  color: #000;
 }
 .section-dark {
-  background-color: #282e34;
+  background-color: #1b2128;
   color: #ddd;
 } 
 footer p{
   background-color: green;
   color:white;
   text-align:center;
+}
+@media (max-width:700px){
+  .pimg1 {
+    min-height: 50vh;
+  }
+  .pimg2 {
+    min-height: 30vh;
+  }
+  .pimg3 {
+    min-height: 30vh;
+  }
+  .section{
+    padding: 20px;
+    text-align: justify;
+  }
+  .textBg {
+    background:rgb(18, 19, 18);
+    letter-spacing: normal;
+    text-transform: lowercase;
+    padding: 10px;
+  }
 }
